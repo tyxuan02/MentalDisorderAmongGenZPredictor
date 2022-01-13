@@ -1,7 +1,8 @@
+library(shiny)
+library(shinythemes)
 
 
-
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("flatly"),
   titlePanel("Mental Disorder Predictor"),
   sidebarLayout(
     sidebarPanel(
@@ -146,8 +147,11 @@ ui <- fluidPage(
                            h2(paste("Type of Mental Disorders:")),
                            hr(),
                            h3(textOutput("type")),
-                           h3(verbatimTextOutput("test"))),
-                  tabPanel("Description"),
+                           h3(verbatimTextOutput("checkCount"))),
+                  
+                  
+                  tabPanel("Description",
+                           h3(textOutput("type1"))),
                   tabPanel("Dataset"),
                   tabPanel("About")),
       

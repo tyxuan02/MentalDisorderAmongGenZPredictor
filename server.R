@@ -1,3 +1,5 @@
+library(shiny)
+library(shinythemes)
 
 server <- function(input, output) {
   
@@ -252,135 +254,141 @@ server <- function(input, output) {
     }
   })
   
-  output$test <- renderText({
+  count = 0
+  
+  output$checkCount <- renderText({
     input$predict
-    count = 0
     if (input$disorderType == "Mood Disorder"){
-      if (input$AEnter1 == "Yes"){
+      if (isolate(input$AEnter1 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter2 == "Yes"){
+      if (isolate(input$AEnter2 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter3 == "Yes"){
+      if (isolate(input$AEnter3 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter4 == "Yes"){
+      if (isolate(input$AEnter4 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter5 == "Yes"){
+      if (isolate(input$AEnter5 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter6 == "Yes"){
+      if (isolate(input$AEnter6 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter7 == "Yes"){
+      if (isolate(input$AEnter7 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter8 == "Yes"){
+      if (isolate(input$AEnter8 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter9 == "Yes"){
+      if (isolate(input$AEnter9 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter10 == "Yes"){
+      if (isolate(input$AEnter10 == "Yes")){
         count = count + 1
       }
     } else if (input$disorderType == "Anxiety Disorder"){
-      if (input$BEnter1 == "Yes"){
+      if (isolate(input$BEnter1 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter2 == "Yes"){
+      if (isolate(input$BEnter2 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter3 == "Yes"){
+      if (isolate(input$BEnter3 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter4 == "Yes"){
+      if (isolate(input$BEnter4 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter5 == "Yes"){
+      if (isolate(input$BEnter5 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter6 == "Yes"){
+      if (isolate(input$BEnter6 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter7 == "Yes"){
+      if (isolate(input$BEnter7 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter8 == "Yes"){
+      if (isolate(input$BEnter8 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter9 == "Yes"){
+      if (isolate(input$BEnter9 == "Yes")){
         count = count + 1
       }
-      if (input$BEnter10 == "Yes"){
+      if (isolate(input$BEnter10 == "Yes")){
         count = count + 1
       }
     } else if (input$disorderType == "Eating Disorder"){
-      if (input$CEnter1 == "Yes"){
+      if (isolate(input$CEnter1 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter2 == "Yes"){
+      if (isolate(input$CEnter2 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter3 == "Yes"){
+      if (isolate(input$CEnter3 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter4 == "Yes"){
+      if (isolate(input$CEnter4 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter5 == "Yes"){
+      if (isolate(input$CEnter5 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter6 == "Yes"){
+      if (isolate(input$CEnter6 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter7 == "Yes"){
+      if (isolate(input$CEnter7 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter8 == "Yes"){
+      if (isolate(input$CEnter8 == "Yes")){
         count = count + 1
       }
-      if (input$AEnter9 == "Yes"){
+      if (isolate(input$AEnter9 == "Yes")){
         count = count + 1
       }
-      if (input$CEnter10 == "Yes"){
+      if (isolate(input$CEnter10 == "Yes")){
         count = count + 1
       }
     } else if (input$disorderType == "Trauma-Related Disorder"){
-      if (input$DEnter1 == "Yes"){
+      if (isolate(input$DEnter1 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter2 == "Yes"){
+      if (isolate(input$DEnter2 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter3 == "Yes"){
+      if (isolate(input$DEnter3 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter4 == "Yes"){
+      if (isolate(input$DEnter4 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter5 == "Yes"){
+      if (isolate(input$DEnter5 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter6 == "Yes"){
+      if (isolate(input$DEnter6 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter7 == "Yes"){
+      if (isolate(input$DEnter7 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter8 == "Yes"){
+      if (isolate(input$DEnter8 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter9 == "Yes"){
+      if (isolate(input$DEnter9 == "Yes")){
         count = count + 1
       }
-      if (input$DEnter10 == "Yes"){
+      if (isolate(input$DEnter10 == "Yes")){
         count = count + 1
       }
     }
-    isolate(paste(count))
+    paste(count)
+  })
+  
+  output$type1 <- renderText({
+    input$predict
+    isolate(paste(input$disorderType))
   })
   
 }
