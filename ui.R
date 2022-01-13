@@ -3,11 +3,11 @@ library(shinythemes)
 
 
 ui <- fluidPage(theme = shinytheme("flatly"),
-  titlePanel("Mental Disorder Predictor"),
+  titlePanel("Mental Disorder Among Gen Z Predictor"),
   sidebarLayout(
     sidebarPanel(
       textInput("name","Please enter your name"),
-      sliderInput("age","Choose your age (Move the slider)",min=1,max=100,value=20,step=1),
+      sliderInput("age","Choose your age (Move the slider)",min=10,max=25,value=20,step=1),
       radioButtons("gender","Choose your gender (Click either one)",
                    choices = c("Male","Female")),
       radioButtons("checkPrevious","Did you experience any mental disorder before?",
@@ -106,6 +106,8 @@ ui <- fluidPage(theme = shinytheme("flatly"),
     
     mainPanel(
       tabsetPanel(type = "tabs",
+                  tabPanel("Description"),
+                  
                   tabPanel("Details",
                            h3(paste("User Input Details")),
                            hr(),
@@ -148,10 +150,6 @@ ui <- fluidPage(theme = shinytheme("flatly"),
                            hr(),
                            h3(textOutput("type")),
                            h3(verbatimTextOutput("checkCount"))),
-                  
-                  
-                  tabPanel("Description",
-                           h3(textOutput("type1"))),
                   tabPanel("Dataset"),
                   tabPanel("About")),
       

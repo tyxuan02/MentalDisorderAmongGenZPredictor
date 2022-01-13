@@ -386,9 +386,4 @@ server <- function(input, output) {
     paste(count)
   })
   
-  output$type1 <- renderText({
-    input$predict
-    isolate(paste(input$disorderType))
-  })
-  
 }
