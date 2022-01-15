@@ -268,7 +268,7 @@ ui <- fluidPage(theme = shinytheme("flatly"),
                                              tags$li(h4("Severely malnourished"))
                                            )
                                          ),   
-                                         h1("Trauma-related disorder: ")),
+                                         h1("Trauma-related disorder: "),
                                          h4("Post-traumatic stress disorder symptoms may start within one month of a traumatic event, but sometimes symptoms may not appear until years after the event. These symptoms cause significant problems in social or work situations and in relationships. PTSD symptoms are generally grouped into four types: intrusive memories, avoidance, negative changes in thinking and mood, and changes in physical and emotional reactions."),
                                          h3(strong("Symptoms of intrusive memories:")), 
                                          tags$div(
@@ -344,7 +344,7 @@ ui <- fluidPage(theme = shinytheme("flatly"),
                                            tags$ul(
                                              tags$li(h4("Having a job that increases your risk of being exposed to traumatic events, such as military personnel and first responders"))
                                            )
-                                         ),
+                                         )),
                   
                   tabPanel("Details",
                            h3(paste("User Input Details")),
