@@ -6,10 +6,11 @@ A R shiny app made by a group of AI students from University of Malaya.
 Group Name : Your Matter (Group C)
 
 Group members: 
-CHOW JIE LUN
-SURAYIA RAHMAN
-TEEA YU XUAN
-HOONG DAO JING
+
+1.CHOW JIE LUN
+2.SURAYIA RAHMAN
+3.TEEA YU XUAN
+4.HOONG DAO JING
  
  
  
