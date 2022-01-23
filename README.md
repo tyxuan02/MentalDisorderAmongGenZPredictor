@@ -14,8 +14,8 @@ Group members:
 
 
 ### Note
-Clone Final.R to your repository and run it on your R
- 
+Clone Final.R to your repository and run it on your R studio
+  
  
  
  
