@@ -11,6 +11,10 @@ Group members:
 2.SURAYIA RAHMAN
 3.TEEA YU XUAN
 4.HOONG DAO JING
+
+
+### Note
+Clone Final.R to your repository and run it on your R
  
  
  
