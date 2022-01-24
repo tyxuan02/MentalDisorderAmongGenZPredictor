@@ -1,5 +1,5 @@
 # Mental Disorder Among Gen Z Predictor 
-A R shiny app made by a group of AI students from University of Malaya.
+A shiny app made by a group of AI students from University of Malaya.
 
 ### WIA1007 Introduction to Data Science Group Project
 
