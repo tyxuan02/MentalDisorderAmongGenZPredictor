@@ -3,7 +3,7 @@ A R shiny app made by a group of AI students from University of Malaya.
 
 ### WIA1007 Introduction to Data Science Group Project
 
-Group Name : Your Matter (Group C)
+Group Name : You Matter (Group C)
 
 Group members: 
 
@@ -14,7 +14,7 @@ Group members:
 
 
 ### Note
-Clone Final.R to your repository and run it on your R studio
+Clone Final.R to your repository and run it on your R studio OR run our shiny app on https://chowjielun.shinyapps.io/YouMatter/
   
  
  
